@@ -27,7 +27,7 @@ class AutoSubCode:
         for file in self.QuestionCodesInWebSite:
             QuestionName = file["QuestionName"]+".cpp"
             QuestionCode = file["QuestionCode"]
-            FileContent = self.GetContentFile("./"+QuestionName)
+            FileContent = self.GetContentFile("./code/"+QuestionName)
             if FileContent is not None:
                 FileContent = FileContent.replace("#pragma GCC optimize(\"O2\")",'')
                 print(f"{QuestionName}\n{QuestionCode}\n{FileContent}\n\n")

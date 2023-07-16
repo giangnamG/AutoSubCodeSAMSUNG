@@ -5,3 +5,8 @@ burp0_cookies
 burp0_headers
 burp0_data
 ```
+
+```powershell
+git clone https://github.com/giangnamG/AutoSubCodeSAMSUNG.git
+python auto_submit.py
+```
